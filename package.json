@@ -1,0 +1,26 @@
+{
+  "name": "brunch",
+  "private": true,
+  "version": "0.0.0",
+  "type": "module",
+  "scripts": {
+    "dev": "vite",
+    "build": "vue-tsc && vite build",
+    "preview": "vite preview"
+  },
+  "dependencies": {
+    "@types/lodash.debounce": "^4.0.9",
+    "dotenv": "^16.3.1",
+    "lodash.debounce": "^4.0.8",
+    "vue": "^3.3.11",
+    "vue-router": "^4.0.13",
+    "vue-snap": "^1.0.0-alpha.5"
+  },
+  "devDependencies": {
+    "@types/node": "^20.10.5",
+    "@vitejs/plugin-vue": "^4.5.2",
+    "typescript": "^5.2.2",
+    "vite": "^5.0.8",
+    "vue-tsc": "^1.8.25"
+  }
+}
