@@ -4,26 +4,22 @@
 // https://digitalpatio.hashnode.dev/build-better-forms-with-vuejs-3-composition-api-a-practical-guide
 import { computed, reactive, ref } from 'vue';
 import debounce from 'lodash.debounce'
+import telegramMessage from '../../utils/telegramMessage'
+import checkEmailValid from '../../utils/checkEmailValid'
 
-// This is the way of using environment variables in Vue 3 with Vite
-// https://vitejs.dev/guide/env-and-mode.html#env-files
-const BOT_TOKEN = import.meta.env.VITE_APP_TELEGRAM_BOT_TOKEN;
-const CHAT_ID = import.meta.env.VITE_APP_TELEGRAM_CHAT_ID;
 
-// Creating an interface for the form data
-interface FormData {
-    name: string;
-    email: string;
-    subject: string;
-    message: string;
-}
+// The type of the form data
+import formDataType from '../../types/contactFormDataType'
 
+const emailRegex = /^[^\s@]+@[^\s@]+\.[^\s@]+$/;
+
+// Monitoring inputs
 const formData = reactive({
     name: '',
     email: '',
     subject: '',
     message: '',
-} as FormData);
+} as formDataType);
 
 const resetForm = () => {
     formData.name = '';
@@ -32,42 +28,17 @@ const resetForm = () => {
     formData.message = '';
 };
 
-const telegramMessage = async () => {
-    const BASE_URL = `https://api.telegram.org/${BOT_TOKEN}/sendMessage?chat_id=${CHAT_ID}&text=`;
-    const message = `
-    Name: ${formData.name} \n
-    Email: ${formData.email} \n
-    Subject: ${formData.subject} \n
-    Message: ${formData.message}
-`;
-
-    try {
-        const response = await fetch(BASE_URL + message);
-        const data = await response.json();
-        console.log(data)
-
-    } catch (error) {
-        console.log(error);
-    }
-};
-
-const emailRegex = /^[^\s@]+@[^\s@]+\.[^\s@]+$/;
 
 // Wether or not to show the error message under the email field
 const showErrorMessage = ref(false);
 
 // Define the debounced validation function
-const validateEmailDebounced = debounce(() => {
-    if (formData.email.length <= 3) {
-        showErrorMessage.value = false;
-        return;
-    } else if (emailRegex.test(formData.email)) {
-        showErrorMessage.value = false;
-        return;
-    } else {
-        showErrorMessage.value = true;
-    }
-}, 1000);
+const validateEmailDebounced = debounce(() => checkEmailValid(
+    formData.email,
+    showErrorMessage,
+    emailRegex
+
+), 1000);
 
 
 const isFormValid = computed(() => {
@@ -81,7 +52,7 @@ const submitForm = () => {
 
     if (isFormValid.value) {
         console.log('Form valid:');
-        telegramMessage()
+        telegramMessage(formData)
         resetForm();
     } else {
         console.log('Form invalid:', formData);
@@ -91,7 +62,6 @@ const submitForm = () => {
 
 
 </script>
-
 
 
 <template>

@@ -11,7 +11,7 @@
                 <div class="col-md-6 col-lg-3 mb-4">
                     <div class="service-item">
                         <div class="service-img mx-auto">
-                            <img class="rounded-circle w-100 h-100 bg-light p-3" src="../static/img/service-1.jpg"
+                            <img class="rounded-circle w-100 h-100 bg-light p-3" src="../../static/img/service-1.jpg"
                                 style="object-fit: cover;">
                         </div>
                         <div class="position-relative text-center bg-light rounded p-4 pb-5" style="margin-top: -75px;">
@@ -25,7 +25,7 @@
                 <div class="col-md-6 col-lg-3 mb-4">
                     <div class="service-item">
                         <div class="service-img mx-auto">
-                            <img class="rounded-circle w-100 h-100 bg-light p-3" src="../static/img/service-2.jpg"
+                            <img class="rounded-circle w-100 h-100 bg-light p-3" src="../../static/img/service-2.jpg"
                                 style="object-fit: cover;">
                         </div>
                         <div class="position-relative text-center bg-light rounded p-4 pb-5" style="margin-top: -75px;">
@@ -39,7 +39,7 @@
                 <div class="col-md-6 col-lg-3 mb-4">
                     <div class="service-item">
                         <div class="service-img mx-auto">
-                            <img class="rounded-circle w-100 h-100 bg-light p-3" src="../static/img/service-3.jpg"
+                            <img class="rounded-circle w-100 h-100 bg-light p-3" src="../../static/img/service-3.jpg"
                                 style="object-fit: cover;">
                         </div>
                         <div class="position-relative text-center bg-light rounded p-4 pb-5" style="margin-top: -75px;">
@@ -53,7 +53,7 @@
                 <div class="col-md-6 col-lg-3 mb-4">
                     <div class="service-item">
                         <div class="service-img mx-auto">
-                            <img class="rounded-circle w-100 h-100 bg-light p-3" src="../static/img/service-4.jpg"
+                            <img class="rounded-circle w-100 h-100 bg-light p-3" src="../../static/img/service-4.jpg"
                                 style="object-fit: cover;">
                         </div>
                         <div class="position-relative text-center bg-light rounded p-4 pb-5" style="margin-top: -75px;">

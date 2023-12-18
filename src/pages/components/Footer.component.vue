@@ -34,6 +34,6 @@
     </div>
 
     <!-- Back to Top -->
-    <router-link :to="{ name: 'Home', hash: '#home-section' }" class="btn btn-secondary px-2 back-to-top"><i class="fa fa-angle-double-up"></i></router-link>
+    <router-link :to="{ name: 'Home', hash: '#home' }" class="btn btn-secondary px-2 back-to-top"><i class="fa fa-angle-double-up"></i></router-link>
 
 </template>

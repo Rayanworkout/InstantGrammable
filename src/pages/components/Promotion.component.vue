@@ -5,7 +5,7 @@
         <div class="row bg-primary m-0">
             <div class="col-md-6 px-0" style="min-height: 500px;">
                 <div class="position-relative h-100">
-                    <img class="position-absolute w-100 h-100" src="../static/img/promotion.jpg" style="object-fit: cover;">
+                    <img class="position-absolute w-100 h-100" src="../../static/img/promotion.jpg" style="object-fit: cover;">
                     <button type="button" class="btn-play" data-toggle="modal"
                         data-src="https://www.youtube.com/embed/5jrMwhmYW1A" data-target="#videoModal">
                         <span></span>
@@ -21,7 +21,7 @@
                     <h3 class="font-weight-bold text-white mt-3 mb-4">Chocolate Ice Cream</h3>
                     <p class="text-white mb-4">Lorem justo clita dolor ipsum ut sed eos, ipsum et dolor kasd sit ea
                         justo. Erat justo sed sed diam. Ea et erat ut sed diam sea ipsum</p>
-                    <router-link :to="{ name: 'Contact', hash: '#contact-section' }"
+                    <router-link :to="{ name: 'Home', hash: '#contact-section' }"
                         class="btn btn-secondary py-3 px-5 mt-2">
                         Je Réserve</router-link>
                 </div>

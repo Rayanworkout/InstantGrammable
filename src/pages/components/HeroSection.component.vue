@@ -2,8 +2,8 @@
 <script setup lang="ts">
 
 import { ref } from 'vue';
-import carousel1 from '../static/img/carousel-1.jpg';
-import carousel2 from '../static/img/carousel-2.jpg';
+import carousel1 from '../../static/img/carousel-1.jpg';
+import carousel2 from '../../static/img/carousel-2.jpg';
 
 interface CarouselItem {
     image: string;
@@ -38,7 +38,7 @@ const nextSlide = () => {
 </script>
 
 <template>
-    <div id="home-section" class="container-fluid p-0 mb-3 pb-3">
+    <div id="home" class="container-fluid p-0 mb-3 pb-3">
         <div id="header-carousel" class="carousel slide" data-ride="carousel">
             <div class="carousel-inner">
                 <div v-for="(item, index) in carouselItems" :key="index"

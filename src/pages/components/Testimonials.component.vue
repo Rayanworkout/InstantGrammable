@@ -16,7 +16,7 @@
                             <h4 class="font-weight-light mb-4">Dolor eirmod diam stet kasd sed. Aliqu rebum est eos. Rebum
                                 elitr dolore et eos labore, stet justo sed est sed. Diam sed sed dolor stet amet eirmod eos
                                 labore diam</h4>
-                            <img class="img-fluid mx-auto mb-3" src="../static/img/testimonial-1.jpg" alt="">
+                            <img class="img-fluid mx-auto mb-3" src="../../static/img/testimonial-1.jpg" alt="">
                             <h5 class="font-weight-bold m-0">Client Name</h5>
                             <span>Profession</span>
                         </div>
@@ -25,7 +25,7 @@
                             <h4 class="font-weight-light mb-4">Dolor eirmod diam stet kasd sed. Aliqu rebum est eos. Rebum
                                 elitr dolore et eos labore, stet justo sed est sed. Diam sed sed dolor stet amet eirmod eos
                                 labore diam</h4>
-                            <img class="img-fluid mx-auto mb-3" src="../static/img/testimonial-2.jpg" alt="">
+                            <img class="img-fluid mx-auto mb-3" src="../../static/img/testimonial-2.jpg" alt="">
                             <h5 class="font-weight-bold m-0">Client Name</h5>
                             <span>Profession</span>
                         </div>
@@ -34,7 +34,7 @@
                             <h4 class="font-weight-light mb-4">Dolor eirmod diam stet kasd sed. Aliqu rebum est eos. Rebum
                                 elitr dolore et eos labore, stet justo sed est sed. Diam sed sed dolor stet amet eirmod eos
                                 labore diam</h4>
-                            <img class="img-fluid mx-auto mb-3" src="../static/img/testimonial-3.jpg" alt="">
+                            <img class="img-fluid mx-auto mb-3" src="../../static/img/testimonial-3.jpg" alt="">
                             <h5 class="font-weight-bold m-0">Client Name</h5>
                             <span>Profession</span>
                         </div>

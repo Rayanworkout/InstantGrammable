@@ -47,17 +47,17 @@
         </button>
         <div class="collapse navbar-collapse justify-content-between" id="navbarCollapse">
           <div class="navbar-nav ml-auto py-0">
-            <router-link :to="{ name: 'Home', hash: '#home-section' }" class="nav-item nav-link">Accueil</router-link>
-            <router-link :to="{ name: 'About', hash: '#about-section' }" class="nav-item nav-link">À Propos</router-link>
-            <router-link :to="{ name: 'Products', hash: '#products-section' }" class="nav-item nav-link">Produits</router-link>
+            <router-link :to="{ name: 'Home' }" class="nav-item nav-link">Accueil</router-link>
+            <router-link :to="{ name: 'Home', hash: '#about-section' }" class="nav-item nav-link">À Propos</router-link>
+            <router-link :to="{ name: 'Home', hash: '#products-section' }" class="nav-item nav-link">Produits</router-link>
           </div>
           <a class="navbar-brand mx-5 d-none d-lg-block">
             <h1 class="m-0 display-6 text-primary"><span class="text-secondary">my</span>BRUNCH</h1>
           </a>
           <div class="navbar-nav mr-auto py-0">
-            <router-link :to="{ name: 'Services', hash: '#services-section' }" class="nav-item nav-link">Services</router-link>
-            <router-link :to="{ name: 'Portfolio', hash: '#portfolio-section' }" class="nav-item nav-link">Galerie</router-link>
-            <router-link :to="{ name: 'Contact', hash: '#contact-section' }" class="nav-item nav-link">Contact</router-link>
+            <router-link :to="{ name: 'Home', hash: '#services-section' }" class="nav-item nav-link">Services</router-link>
+            <router-link :to="{ name: 'Home', hash: '#portfolio-section' }" class="nav-item nav-link">Galerie</router-link>
+            <router-link :to="{ name: 'Home', hash: '#contact-section' }" class="nav-item nav-link">Contact</router-link>
 
           </div>
         </div>
