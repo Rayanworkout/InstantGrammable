@@ -14,16 +14,16 @@ import Contact from './components/Contact.component.vue'
 </script>
 
 <template>
-  <HeroSection />
-  <About />
-  <Promotion />
-  <VideoModal />
-  <Services />
-  <Portfolio />
-  <Products />
-  <Team />
-  <Testimonials />
-  <Contact />
+    <HeroSection />
+    <About />
+    <Promotion />
+    <VideoModal />
+    <Services />
+    <Portfolio />
+    <Products />
+    <Team />
+    <Testimonials />
+    <Contact />
 </template>
 
 

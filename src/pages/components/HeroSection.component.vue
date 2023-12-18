@@ -38,7 +38,7 @@ const nextSlide = () => {
 </script>
 
 <template>
-    <div id="home" class="container-fluid p-0 mb-3 pb-3">
+    <div class="container-fluid p-0 mb-3 pb-3">
         <div id="header-carousel" class="carousel slide" data-ride="carousel">
             <div class="carousel-inner">
                 <div v-for="(item, index) in carouselItems" :key="index"

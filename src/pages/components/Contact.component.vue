@@ -2,10 +2,12 @@
 <script setup lang="ts">
 // https://vuejs.org/guide/essentials/forms
 // https://digitalpatio.hashnode.dev/build-better-forms-with-vuejs-3-composition-api-a-practical-guide
+
 import { computed, reactive, ref } from 'vue';
 import debounce from 'lodash.debounce'
 import telegramMessage from '../../utils/telegramMessage'
 import checkEmailValid from '../../utils/checkEmailValid'
+import resetForm from '../../utils/resetForm'
 
 
 // The type of the form data
@@ -21,16 +23,10 @@ const formData = reactive({
     message: '',
 } as formDataType);
 
-const resetForm = () => {
-    formData.name = '';
-    formData.email = '';
-    formData.subject = '';
-    formData.message = '';
-};
-
 
 // Wether or not to show the error message under the email field
 const showErrorMessage = ref(false);
+const showSuccessMessage = ref(false);
 
 // Define the debounced validation function
 const validateEmailDebounced = debounce(() => checkEmailValid(
@@ -51,9 +47,15 @@ const isFormValid = computed(() => {
 const submitForm = () => {
 
     if (isFormValid.value) {
-        console.log('Form valid:');
         telegramMessage(formData)
-        resetForm();
+        resetForm(formData);
+
+        // Show success message for 5 seconds
+        showSuccessMessage.value = true;
+        setTimeout(() => {
+            showSuccessMessage.value = false;
+        }, 3500);
+
     } else {
         console.log('Form invalid:', formData);
     }
@@ -75,7 +77,10 @@ const submitForm = () => {
             <div class="row justify-content-center">
                 <div class="col-lg-9">
                     <div class="contact-form bg-light rounded p-5">
-                        <div id="success"></div>
+                        <transition name="fade">
+                            <div v-if="showSuccessMessage" class=" success-message text-center py-3">Votre message a
+                                bien été envoyé. 😊</div>
+                        </transition>
                         <form @submit.prevent="submitForm" name="sentMessage" id="contactForm">
                             <div class="form-row">
                                 <div class="col-sm-6 control-group">
@@ -85,8 +90,11 @@ const submitForm = () => {
                                 <div class="col-sm-6 control-group">
                                     <input v-model="formData.email" @input="validateEmailDebounced" type="email"
                                         class="form-control p-4" placeholder="Email" />
-                                    <p v-if="showErrorMessage" class="help-block text-danger">Adresse email incorrecte
-                                    </p>
+                                    <transition name="fade">
+                                        <p v-if="showErrorMessage" class="help-block text-danger">Adresse email incorrecte
+                                        </p>
+                                    </transition>
+
                                 </div>
                             </div>
                             <div class="control-group pt-2">
@@ -111,3 +119,19 @@ const submitForm = () => {
     </div>
 </template>
 
+
+<style>
+.success-message {
+    color: #28a745;
+}
+
+.fade-enter-active,
+.fade-leave-active {
+    transition: opacity 0.5s ease;
+}
+
+.fade-enter-from,
+.fade-leave-to {
+    opacity: 0;
+}
+</style>

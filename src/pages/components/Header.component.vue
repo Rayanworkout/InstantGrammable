@@ -36,7 +36,7 @@
   </div>
 
 
-  <div class="container-fluid position-relative nav-bar p-0">
+  <div id="home" class="container-fluid position-relative nav-bar p-0">
     <div class="container-lg position-relative p-0 px-lg-3" style="z-index: 9;">
       <nav class="navbar navbar-expand-lg bg-white navbar-light shadow p-lg-0">
         <a class="navbar-brand d-block d-lg-none">
