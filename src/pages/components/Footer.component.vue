@@ -6,7 +6,8 @@
             <div class="row">
                 <div class="col-12 mb-4">
                     <a class="navbar-brand m-0">
-                        <h1 class="m-0 mt-n2 display-4 text-primary"><span class="text-secondary">L'instant</span>Grammable</h1>
+                        <h1 class="m-0 mt-n2 display-4 text-primary"><span class="text-secondary">L'instant</span>Grammable
+                        </h1>
                     </a>
                 </div>
                 <div class="col-12 mb-4">
@@ -34,6 +35,9 @@
     </div>
 
     <!-- Back to Top -->
-    <router-link :to="{ name: 'Home', hash: '#home' }" class="btn btn-secondary px-2 back-to-top"><i class="fa fa-angle-double-up"></i></router-link>
+    <div v-if="$route.path === '/'">
+        <router-link :to="{ name: 'Home', hash: '#home' }" class="btn btn-secondary px-2 back-to-top"><i
+                class="fa fa-angle-double-up"></i></router-link>
 
+    </div>
 </template>

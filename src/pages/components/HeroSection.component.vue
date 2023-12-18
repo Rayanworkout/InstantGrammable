@@ -70,7 +70,7 @@ const nextSlide = () => {
     </div>
 </template>
 
-<style>
+<style scoped>
 
 h2 {
     margin-top: 200px;

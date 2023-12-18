@@ -112,13 +112,14 @@ const submitForm = () => {
                         </transition>
                         <form @submit.prevent="submitForm" name="sentMessage" id="contactForm">
                             <div class="form-row">
-                                <div class="col-sm-6 control-group">
-                                    <input v-model="formData.name" type="text" class="form-control p-4" placeholder="Nom" />
-                                    <p class="help-block text-danger"></p>
+                                <div class="col-sm-6 control-group py-3 text-center">
+                                    <label for="name-input" class="px-3 pt-2">Nom</label>
+                                    <input v-model="formData.name" type="text" class="form-control p-4" placeholder="ou prénom 😊"/>
                                 </div>
-                                <div class="col-sm-6 control-group">
+                                <div class="col-sm-6 control-group py-3 text-center">
+                                    <label for="phone-input" class="px-3 pt-2">Téléphone</label>
                                     <input v-model="formData.phone" @input="handlePhoneInput" type="phone"
-                                        class="form-control p-4" placeholder="Numéro de Téléphone" maxlength="12" />
+                                        class="form-control p-4" maxlength="12" placeholder="Pour confirmer la réservation" />
                                     <transition name="fade">
                                         <p v-if="showPhoneErrorMessage" class="help-block text-danger px-3">Format incorrect
                                         </p>
@@ -126,15 +127,15 @@ const submitForm = () => {
                                 </div>
                             </div>
                             <div class="form-row">
-                                <div class="control-group py-3 col-sm-6">
+                                <div class="control-group py-3 col-sm-6 text-center">
                                     <label for="date-input" class="px-3 pt-2">Date Souhaitée</label>
                                     <input v-model="formData.datetime" type="date" id="date-input" class="form-control p-4"
                                         placeholder="Tous les jours !" />
                                 </div>
-                                <div class="control-group py-3 col-sm-6">
+                                <div class="control-group py-3 col-sm-6 text-center">
                                     <label for="peopleQty" class="px-3 pt-2">Nombre de personnes</label>
                                     <input id="peopleQty" type="number" v-model="formData.peopleQty"
-                                        class="form-control p-4">
+                                        class="form-control p-4" placeholder="Combien de chanceux ?">
 
                                 </div>
                             </div>
