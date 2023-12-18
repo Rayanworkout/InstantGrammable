@@ -79,7 +79,7 @@ const submitForm = () => {
                     <div class="contact-form bg-light rounded p-5">
                         <transition name="fade">
                             <div v-if="showSuccessMessage" class=" success-message text-center py-3">Votre message a
-                                bien été envoyé. 😊</div>
+                                bien été envoyé. <i class="bi bi-emoji-smile pink-icon"></i></div>
                         </transition>
                         <form @submit.prevent="submitForm" name="sentMessage" id="contactForm">
                             <div class="form-row">

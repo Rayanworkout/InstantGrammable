@@ -85,7 +85,6 @@ h2 {
      font-size: 95%;   
     }
     .btn {
-        padding: 7px;
         font-size: 80%;
     }
 }

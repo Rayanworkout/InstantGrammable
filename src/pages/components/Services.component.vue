@@ -4,7 +4,8 @@
         <div class="container py-5">
             <div class="row">
                 <div class="col-lg-6">
-                    <h1 class="section-title position-relative mb-5">Best Services We Provide For Our Clients</h1>
+                    <h1 class="section-title position-relative mb-5">Une prestation aux petits soins <i
+                            class="bi bi-flower3 pink-icon"></i></h1>
                 </div>
             </div>
             <div class="row">
@@ -15,8 +16,9 @@
                                 style="object-fit: cover;">
                         </div>
                         <div class="position-relative text-center bg-light rounded p-4 pb-5" style="margin-top: -75px;">
-                            <h5 class="font-weight-semi-bold mt-5 mb-3 pt-5">Quality Maintain</h5>
-                            <p>Dolor nonumy sed eos sed lorem diam amet eos magna. Dolor kasd lorem duo stet kasd justo</p>
+                            <h5 class="font-weight-semi-bold mt-5 mb-3 pt-5">Des produits de qualité</h5>
+                            <p>Nous sélectionnons nos produits avec le plus grands soin, et nous travaillons avec des
+                                producteurs locaux.</p>
                         </div>
                     </div>
                 </div>
@@ -29,9 +31,8 @@
                                 style="object-fit: cover;">
                         </div>
                         <div class="position-relative text-center bg-light rounded p-4 pb-5" style="margin-top: -75px;">
-                            <h5 class="font-weight-semi-bold mt-5 mb-3 pt-5">Individual Approach</h5>
-                            <p>Dolor nonumy sed eos sed lorem diam amet eos magna. Dolor kasd lorem duo stet kasd justo
-                            </p>
+                            <h5 class="font-weight-semi-bold mt-5 mb-3 pt-5">Un service irréprochable</h5>
+                            <p>Notre personnel est formé pour vous offrir une expérience culinaire douce et agréable.</p>
                         </div>
                     </div>
                 </div>
@@ -43,9 +44,9 @@
                                 style="object-fit: cover;">
                         </div>
                         <div class="position-relative text-center bg-light rounded p-4 pb-5" style="margin-top: -75px;">
-                            <h5 class="font-weight-semi-bold mt-5 mb-3 pt-5">Celebration Ice Cream</h5>
-                            <p>Dolor nonumy sed eos sed lorem diam amet eos magna. Dolor kasd lorem duo stet kasd justo
-                            </p>
+                            <h5 class="font-weight-semi-bold mt-5 mb-3 pt-5">Une carte qui évolue</h5>
+                            <p>Notre carte est mise à jour chaque semaine en gardant les produits qui ont eu le plus de
+                                succès, vous trouverez forcément votre bonheur !</p>
                         </div>
                     </div>
                 </div>
@@ -57,9 +58,8 @@
                                 style="object-fit: cover;">
                         </div>
                         <div class="position-relative text-center bg-light rounded p-4 pb-5" style="margin-top: -75px;">
-                            <h5 class="font-weight-semi-bold mt-5 mb-3 pt-5">Delivery To Any Point</h5>
-                            <p>Dolor nonumy sed eos sed lorem diam amet eos magna. Dolor kasd lorem duo stet kasd justo
-                            </p>
+                            <h5 class="font-weight-semi-bold mt-5 mb-3 pt-5">Livraison à domicile</h5>
+                            <p>Pas envie de se déplacer ? Nos livreurs apportent votre commande à domicile dans toute la région.</p>
                         </div>
                     </div>
                 </div>

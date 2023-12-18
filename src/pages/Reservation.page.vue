@@ -104,7 +104,7 @@ const submitForm = () => {
                             <div v-if="showSuccessMessage" class="pb-2 px-3 success-message" style="font-size: larger;">
                                 Votre réservation
                                 a
-                                bien été prise en compte, à bientôt ! 😊</div>
+                                bien été prise en compte, à bientôt ! <i class="bi bi-emoji-smile pink-icon"></i></div>
                         </transition>
                         <transition name="fade">
                             <div v-if="showErrorMessage" class="pb-2 px-3 error-message" style="font-size: larger;">Une
