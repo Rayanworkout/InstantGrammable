@@ -5,13 +5,13 @@
 
 import { computed, reactive, ref } from 'vue';
 import debounce from 'lodash.debounce'
-import telegramMessage from '../../utils/telegramMessage'
-import checkEmailValid from '../../utils/checkEmailValid'
-import resetForm from '../../utils/resetForm'
+import telegramMessage from '../utils/telegramMessage'
+import checkEmailValid from '../utils/checkEmailValid'
+import resetForm from '../utils/resetForm'
 
 
 // The type of the form data
-import formDataType from '../../types/contactFormDataType'
+import formDataType from '../types/contactFormDataType'
 
 const emailRegex = /^[^\s@]+@[^\s@]+\.[^\s@]+$/;
 
@@ -118,20 +118,3 @@ const submitForm = () => {
         </div>
     </div>
 </template>
-
-
-<style>
-.success-message {
-    color: #28a745;
-}
-
-.fade-enter-active,
-.fade-leave-active {
-    transition: opacity 0.5s ease;
-}
-
-.fade-enter-from,
-.fade-leave-to {
-    opacity: 0;
-}
-</style>

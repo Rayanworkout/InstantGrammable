@@ -1,11 +1,10 @@
 
 <template>
-    <div id="about-section" class="container-fluid py-5">
-        <div class="container py-5">
+    <div id="about-section" class="container-fluid">
+        <div class="container">
             <div class="row justify-content-center">
-                <div class="col-lg-7">
-                    <h1 class="section-title position-relative text-center mb-5">Traditional & Delicious Ice Cream Since
-                        1950</h1>
+                <div class="col-lg-7 text-center">
+                    <img src="../../static/img/logo.png" alt="company logo" width="250px">
                 </div>
             </div>
             <div class="row">

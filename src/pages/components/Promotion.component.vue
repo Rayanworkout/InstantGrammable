@@ -21,7 +21,7 @@
                     <h3 class="font-weight-bold text-white mt-3 mb-4">Chocolate Ice Cream</h3>
                     <p class="text-white mb-4">Lorem justo clita dolor ipsum ut sed eos, ipsum et dolor kasd sit ea
                         justo. Erat justo sed sed diam. Ea et erat ut sed diam sea ipsum</p>
-                    <router-link :to="{ name: 'Home', hash: '#contact-section' }"
+                    <router-link :to="{ name: 'Reservation' }"
                         class="btn btn-secondary py-3 px-5 mt-2">
                         Je Réserve</router-link>
                 </div>

@@ -19,8 +19,8 @@
                                 style="object-fit: cover;">
                         </div>
                         <h5 class="font-weight-bold mb-4">Vanilla Ice Cream</h5>
-                        <router-link :to="{ name: 'Home', hash: '#contact-section' }"
-                            class="btn btn-sm btn-secondary">Réserver une Table</router-link>
+                        <router-link :to="{ name: 'Reservation' }" class="btn btn-sm btn-secondary">Réserver une
+                            Table</router-link>
                     </div>
                 </div>
                 <div class="col-md-6 col-lg-3 mb-4">
@@ -34,8 +34,8 @@
                                 style="object-fit: cover;">
                         </div>
                         <h5 class="font-weight-bold mb-4">Vanilla Ice Cream</h5>
-                        <router-link :to="{ name: 'Home', hash: '#contact-section' }"
-                            class="btn btn-sm btn-secondary">Réserver une Table</router-link>
+                        <router-link :to="{ name: 'Reservation' }" class="btn btn-sm btn-secondary">Réserver une
+                            Table</router-link>
                     </div>
                 </div>
 
@@ -50,8 +50,8 @@
                                 style="object-fit: cover;">
                         </div>
                         <h5 class="font-weight-bold mb-4">Vanilla Ice Cream</h5>
-                        <router-link :to="{ name: 'Home', hash: '#contact-section' }"
-                            class="btn btn-sm btn-secondary">Réserver une Table</router-link>
+                        <router-link :to="{ name: 'Reservation' }" class="btn btn-sm btn-secondary">Réserver une
+                            Table</router-link>
                     </div>
                 </div>
 
@@ -66,8 +66,8 @@
                                 style="object-fit: cover;">
                         </div>
                         <h5 class="font-weight-bold mb-4">Vanilla Ice Cream</h5>
-                        <router-link :to="{ name: 'Home', hash: '#contact-section' }"
-                            class="btn btn-sm btn-secondary">Réserver une Table</router-link>
+                        <router-link :to="{ name: 'Reservation' }" class="btn btn-sm btn-secondary">Réserver une
+                            Table</router-link>
                     </div>
                 </div>
             </div>

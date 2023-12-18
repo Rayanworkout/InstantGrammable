@@ -6,7 +6,7 @@
             <div class="row">
                 <div class="col-12 mb-4">
                     <a class="navbar-brand m-0">
-                        <h1 class="m-0 mt-n2 display-4 text-primary"><span class="text-secondary">my</span>BRUNCH</h1>
+                        <h1 class="m-0 mt-n2 display-4 text-primary"><span class="text-secondary">L'instant</span>Grammable</h1>
                     </a>
                 </div>
                 <div class="col-12 mb-4">
@@ -19,8 +19,8 @@
                     <div class="row">
                         <div class="col-sm-6 text-center text-sm-right border-right mb-3 mb-sm-0">
                             <h5 class="font-weight-bold mb-2">Bienvenue !</h5>
-                            <p class="mb-2">12 Avenue de Colbert</p>
-                            <p class="mb-0">+012 345 67890</p>
+                            <p class="mb-2">Rue de la Reine Jeanne, 04100 Manosque</p>
+                            <p class="mb-0">06.01.01.01.01</p>
                         </div>
                         <div class="col-sm-6 text-center text-sm-left">
                             <h5 class="font-weight-bold mb-2">Horaires d'ouverture</h5>

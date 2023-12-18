@@ -3,8 +3,8 @@
 // Interface for contact form data
 interface reservationFormDataType {
     name: string;
-    email: string;
-    datetime: Date;
+    phone: string;
+    datetime: string;
     peopleQty: number;
 }
 

@@ -3,8 +3,9 @@ import { Router, createRouter, createWebHistory } from 'vue-router';
 import App from './App.vue';
 
 // Import the pages
-import Home from './pages/Home.component.vue';
-import Reservation from './pages/Reservation.component.vue';
+import Home from './pages/Home.page.vue';
+import Reservation from './pages/Reservation.page.vue';
+import Contact from './pages/Contact.page.vue';
 
 // Create a custom type for the $router property
 // So it can be used in any component without errors
@@ -21,6 +22,7 @@ const router = createRouter({
     // On sections within the same page, I use smooth scrollBehavior
     { path: '/', component: Home, name: 'Home' },
     { path: '/reservation', component: Reservation, name: 'Reservation' },
+    { path: '/contact', component: Contact, name: 'Contact' },
   ],
 
   scrollBehavior(to, _, savedPosition) {

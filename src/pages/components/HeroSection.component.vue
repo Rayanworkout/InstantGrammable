@@ -16,14 +16,14 @@ let activeIndex = ref(0);
 
 const carouselItems: CarouselItem[] = [
     {
-        title: "My Brunch Specialist",
+        title: "Le plus doux des Brunchs",
         image: carousel1,
-        subtitle: "Since 1950",
+        subtitle: "Accordez-vous un moment de détente et de gourmandise",
     },
     {
-        title: "Another Title",
+        title: "Un instant de douceur",
         image: carousel2,
-        subtitle: "Another Subtitle",
+        subtitle: "Venez découvrir nos pâtisseries et nos chocolats",
     }
 ];
 
@@ -44,9 +44,10 @@ const nextSlide = () => {
                 <div v-for="(item, index) in carouselItems" :key="index"
                     :class="['carousel-item', { active: index === activeIndex }]">
                     <img class="w-100" :src="item.image" :alt="'Image ' + index">
-                    <div class="carousel-caption d-flex flex-column align-items-center justify-content-center">
+                    <div class="carousel-caption d-flex flex-column align-items-center">
                         <div class="p-3" style="max-width: 900px;">
-                            <h4 class="text-white text-uppercase mb-md-3">{{ item.title }}</h4>
+                            <h2 class="text-white text-uppercase mb-md-3">{{ item.title }}</h2>
+                            <h3 class="text-white">{{ item.subtitle }}</h3>
                             <router-link :to="{ name: 'Reservation'}"
                                 class="btn btn-primary py-md-3 px-md-5 mt-2">Réserver une Table</router-link>
                         </div>
@@ -68,3 +69,25 @@ const nextSlide = () => {
         </div>
     </div>
 </template>
+
+<style>
+
+h2 {
+    margin-top: 200px;
+}
+
+@media (max-width: 1000px) {
+    h2 {
+        margin-top: 10px;
+    }
+
+    h2, h3 {
+     font-size: 95%;   
+    }
+    .btn {
+        padding: 7px;
+        font-size: 80%;
+    }
+}
+
+</style>
