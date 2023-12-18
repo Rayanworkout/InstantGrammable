@@ -71,7 +71,7 @@ const submitForm = () => {
         <div class="container py-3">
             <div class="row justify-content-center">
                 <div class="col-lg-6">
-                    <h1 class="section-title position-relative text-center mb-5">Contact</h1>
+                    <h1 class="section-title position-relative text-center mb-3">Contact</h1>
                 </div>
             </div>
             <div class="row justify-content-center">

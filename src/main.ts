@@ -6,6 +6,7 @@ import App from './App.vue';
 import Home from './pages/Home.page.vue';
 import Reservation from './pages/Reservation.page.vue';
 import Contact from './pages/Contact.page.vue';
+import Menu from './pages/Menu.page.vue';
 
 // Create a custom type for the $router property
 // So it can be used in any component without errors
@@ -23,6 +24,7 @@ const router = createRouter({
     { path: '/', component: Home, name: 'Home' },
     { path: '/reservation', component: Reservation, name: 'Reservation' },
     { path: '/contact', component: Contact, name: 'Contact' },
+    { path: '/carte', component: Menu, name: 'Menu' },
   ],
 
   scrollBehavior(to, _, savedPosition) {

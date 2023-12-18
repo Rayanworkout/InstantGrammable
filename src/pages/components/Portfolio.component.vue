@@ -3,8 +3,7 @@
     <div id="portfolio-section" class="container-fluid my-3 py-3 px-0">
         <div class="row justify-content-center m-0">
             <div class="col-lg-5">
-                <h1 class="section-title position-relative text-center mb-5">Quelques exemples de nos créations <i class="bi bi-emoji-smile pink-icon"></i>
-</h1>
+                <h1 class="section-title position-relative text-center mb-5">Nos créations <i class="bi bi-stars pink-icon"></i></h1>
             </div>
         </div>
         <div class="row m-0 portfolio-container">

@@ -55,7 +55,7 @@
               <h1 class="m-0 display-5 text-primary"><span class="text-secondary">L'instant</span>Grammable</h1>
             </router-link>
             <div class="navbar-nav mr-auto py-0">
-              <router-link :to="{ name: 'Home', hash: '#portfolio-section' }" class="nav-item nav-link">La
+              <router-link v-if="$route.path !== '/carte'" :to="{ name: 'Menu' }" class="nav-item nav-link">La
                 Carte</router-link>
               <router-link v-if="$route.path !== '/contact'" :to="{ name: 'Contact' }" class="nav-item nav-link">Contact</router-link>
             </div>

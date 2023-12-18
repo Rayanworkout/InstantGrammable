@@ -15,8 +15,10 @@
                         style="width: 100px; height: 100px;">
                         <h3 class="font-weight-bold text-secondary mb-0">MIAM</h3>
                     </div>
-                    <h3 class="font-weight-bold text-white mt-3 mb-4">Notre vedette</h3>
-                    <p class="text-white mb-4">Venez goûter le <span class="fluffy">Fluffy Pancake</span> notre produit phare au succès fulgurant !
+                    <h3 class="font-weight-bold text-white mt-3 mb-4">Notre vedette <i class="bi bi-stars"></i>
+                    </h3>
+                    <p class="text-white mb-4">Venez goûter le <span class="fluffy">Fluffy Pancake</span> notre produit
+                        phare au succès fulgurant !
                     </p>
                     <router-link :to="{ name: 'Reservation' }" class="btn btn-secondary py-3 px-5 mt-2">
                         Je Réserve</router-link>
@@ -27,10 +29,8 @@
 </template>
 
 <style scoped>
-
 .fluffy {
     font-family: 'Oleo Script', sans-serif;
     font-size: 1.5em;
 }
-
 </style>
