@@ -49,7 +49,6 @@
 
 .pf-img {
     height: 300px;
-    width: 80px;
 }
 
 @media (min-width: 768px) {

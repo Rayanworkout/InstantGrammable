@@ -113,13 +113,13 @@ const submitForm = () => {
                         <div class="contact-form bg-light rounded p-5">
                             <h1 class="section-title position-relative text-center mb-5 pink-icon">Formulaire de Réservation</h1>
                             <transition name="fade">
-                                <div v-if="showSuccessMessage" class="pb-2 px-3 success-message" style="font-size: larger;">
+                                <div v-if="showSuccessMessage" class="pb-2 px-3 success-message text-center" style="font-size: larger;">
                                     Votre réservation
                                     a
-                                    bien été prise en compte, à bientôt ! <i class="bi bi-emoji-smile pink-icon"></i></div>
+                                    bien été prise en compte, à bientôt ! <i class="bi bi-emoji-smile success-message"></i></div>
                             </transition>
                             <transition name="fade">
-                                <div v-if="showErrorMessage" class="pb-2 px-3 error-message" style="font-size: larger;">Une
+                                <div v-if="showErrorMessage" class="pb-2 px-3 error-message text-center" style="font-size: larger;">Une
                                     erreur est survenue, veuillez réessayer plus tard ou nous contacter par téléphone. 😔
                                 </div>
                             </transition>
