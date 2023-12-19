@@ -6,7 +6,6 @@ import MyFooter from './pages/components/Footer.component.vue'
 
 <template>
 
-  <!-- Using Header and Footer on all pages, and then a router view to display the content of each page. -->
   <div>
     <MyHeader />
     <router-view></router-view>

@@ -2,12 +2,8 @@
 <template>
     <div class="container-fluid py-3">
         <div class="container py-3">
-            <div class="row">
-                <div class="col-lg-6">
-                    <h1 class="section-title position-relative mb-5">Experienced & Most Famous Ice Cream Chefs</h1>
-                </div>
-                <div class="col-lg-6 mb-5 mb-lg-0 pb-5 pb-lg-0"></div>
-            </div>
+            <h1 class="section-title position-relative mb-5 text-center">Notre équipe de passionnés <i
+                    class="bi bi-stars pink-icon"></i></h1>
             <div class="row">
                 <div class="col-lg-6 mb-5 mb-lg-0 pb-5 pb-lg-0">
                     <div class="team-item">

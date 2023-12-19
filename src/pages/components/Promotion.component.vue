@@ -5,7 +5,7 @@
         <div class="row bg-primary m-0">
             <div class="col-md-6 px-0" style="min-height: 500px;">
                 <div class="position-relative h-100">
-                    <img class="position-absolute w-100 h-100" src="../../static/img/promotion.jpg"
+                    <img class="position-absolute w-100 h-100" src="../../static/img/fluffy.jpg"
                         style="object-fit: cover;">
                 </div>
             </div>

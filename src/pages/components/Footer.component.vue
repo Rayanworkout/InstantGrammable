@@ -1,11 +1,11 @@
 
 
 <template>
-    <div class="container-fluid footer bg-light py-5" style="margin-top: 90px;">
-        <div class="container text-center py-5">
+    <div class="container-fluid footer bg-light" style="margin-top: 90px;">
+        <div class="container text-center">
             <div class="row">
                 <div class="col-12 mb-4">
-                    <a class="navbar-brand m-0">
+                    <a class="navbar-brand">
                         <h1 class="m-0 mt-n2 display-4 text-primary"><span class="text-secondary">L'instant</span>Grammable
                         </h1>
                     </a>

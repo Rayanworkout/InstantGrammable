@@ -9,36 +9,36 @@
         <div class="row m-0 portfolio-container">
             <div class="col-lg-4 col-md-6 pb-2">
                 <div class="position-relative overflow-hidden">
-                    <img class="img-fluid w-100 rounded-lg" src="../../static/img/portfolio-1.jpg" alt="">
+                    <img class="img-fluid w-100 rounded-lg" src="../../static/img/brunch-item.jpg" alt="">
 
                 </div>
             </div>
             <div class="col-lg-4 col-md-6 pb-2">
                 <div class="position-relative overflow-hidden">
-                    <img class="img-fluid w-100 rounded-lg" src="../../static/img/portfolio-2.jpg" alt="">
+                    <img class="img-fluid w-100 rounded-lg" src="../../static/img/brunch-item2.jpg" alt="">
 
                 </div>
             </div>
             <div class="col-lg-4 col-md-6 pb-2">
                 <div class="position-relative overflow-hidden">
-                    <img class="img-fluid w-100 rounded-lg" src="../../static/img/portfolio-3.jpg" alt="">
+                    <img class="img-fluid w-100 rounded-lg" src="../../static/img/brunch-item3.jpg" alt="">
 
                 </div>
             </div>
             <div class="col-lg-4 col-md-6 pb-2">
                 <div class="position-relative overflow-hidden">
-                    <img class="img-fluid w-100 rounded-lg" src="../../static/img/portfolio-4.jpg" alt="">
+                    <img class="img-fluid w-100 rounded-lg" src="../../static/img/brunch-item4.jpg" alt="">
 
                 </div>
             </div>
             <div class="col-lg-4 col-md-6 pb-2">
                 <div class="position-relative overflow-hidden">
-                    <img class="img-fluid w-100 rounded-lg" src="../../static/img/portfolio-5.jpg" alt="">
+                    <img class="img-fluid w-100 rounded-lg" src="../../static/img/brunch-item5.jpg" alt="">
                 </div>
             </div>
             <div class="col-lg-4 col-md-6 pb-2">
                 <div class="position-relative overflow-hidden">
-                    <img class="img-fluid w-100 rounded-lg" src="../../static/img/portfolio-6.jpg" alt="">
+                    <img class="img-fluid w-100 rounded-lg" src="../../static/img/brunch-item6.jpg" alt="">
                 </div>
             </div>
         </div>

@@ -65,53 +65,57 @@ const submitForm = () => {
 
 </script>
 
-
 <template>
     <div id="contact-section" class="container-fluid py-3 mt-3">
-        <div class="container py-3">
-            <div class="row justify-content-center">
-                <div class="col-lg-6">
-                    <h1 class="section-title position-relative text-center mb-3">Contact</h1>
+        <img src="../static/img/contact-bg.jpg" alt="brunch table picture" class="form-background">
+        <div class="form-container">
+            <div class="container py-3">
+                <div class="row justify-content-center">
+                    <div class="col-lg-6">
+                        <h1 class="section-title position-relative text-center mb-3 pink-icon">Contact</h1>
+                    </div>
                 </div>
-            </div>
-            <div class="row justify-content-center">
-                <div class="col-lg-9">
-                    <div class="contact-form bg-light rounded p-5">
-                        <transition name="fade">
-                            <div v-if="showSuccessMessage" class=" success-message text-center py-3">Votre message a
-                                bien été envoyé. <i class="bi bi-emoji-smile pink-icon"></i></div>
-                        </transition>
-                        <form @submit.prevent="submitForm" name="sentMessage" id="contactForm">
-                            <div class="form-row">
-                                <div class="col-sm-6 control-group">
-                                    <input v-model="formData.name" type="text" class="form-control p-4" placeholder="Nom" />
+                <div class="row justify-content-center">
+                    <div class="col-lg-9">
+                        <div class="contact-form bg-light rounded p-5">
+                            <transition name="fade">
+                                <div v-if="showSuccessMessage" class=" success-message text-center py-3">Votre message a
+                                    bien été envoyé. <i class="bi bi-emoji-smile pink-icon"></i></div>
+                            </transition>
+                            <form @submit.prevent="submitForm" name="sentMessage" id="contactForm">
+                                <div class="form-row">
+                                    <div class="col-sm-6 control-group">
+                                        <input v-model="formData.name" type="text" class="form-control p-4"
+                                            placeholder="Nom" />
+                                        <p class="help-block text-danger"></p>
+                                    </div>
+                                    <div class="col-sm-6 control-group">
+                                        <input v-model="formData.email" @input="validateEmailDebounced" type="email"
+                                            class="form-control p-4" placeholder="Email" />
+                                        <transition name="fade">
+                                            <p v-if="showErrorMessage" class="help-block text-danger">Adresse email
+                                                incorrecte
+                                            </p>
+                                        </transition>
+
+                                    </div>
+                                </div>
+                                <div class="control-group pt-2">
+                                    <input v-model="formData.subject" type="text" class="form-control p-4"
+                                        placeholder="Sujet" />
                                     <p class="help-block text-danger"></p>
                                 </div>
-                                <div class="col-sm-6 control-group">
-                                    <input v-model="formData.email" @input="validateEmailDebounced" type="email"
-                                        class="form-control p-4" placeholder="Email" />
-                                    <transition name="fade">
-                                        <p v-if="showErrorMessage" class="help-block text-danger">Adresse email incorrecte
-                                        </p>
-                                    </transition>
-
+                                <div class="control-group">
+                                    <textarea v-model="formData.message" class="form-control p-4" rows="6"
+                                        placeholder="Message"></textarea>
+                                    <p class="help-block text-danger"></p>
                                 </div>
-                            </div>
-                            <div class="control-group pt-2">
-                                <input v-model="formData.subject" type="text" class="form-control p-4"
-                                    placeholder="Sujet" />
-                                <p class="help-block text-danger"></p>
-                            </div>
-                            <div class="control-group">
-                                <textarea v-model="formData.message" class="form-control p-4" rows="6"
-                                    placeholder="Message"></textarea>
-                                <p class="help-block text-danger"></p>
-                            </div>
-                            <div>
-                                <button :disabled="!isFormValid" class="btn btn-primary btn-block py-3 px-5"
-                                    type="submit">Envoyer</button>
-                            </div>
-                        </form>
+                                <div>
+                                    <button :disabled="!isFormValid" class="btn btn-primary btn-block py-3 px-5"
+                                        type="submit">Envoyer</button>
+                                </div>
+                            </form>
+                        </div>
                     </div>
                 </div>
             </div>
