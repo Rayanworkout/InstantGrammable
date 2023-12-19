@@ -1,1 +1,1 @@
-VueJS Typescript project for myBrunch company
+VueJS Typescript project for Instant Grammable company
