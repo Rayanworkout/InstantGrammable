@@ -1,7 +1,4 @@
 .env
 node_modules/
 .vscode/
-/src/static/js
-/src/static/scss
-/src/static/css
-/src/static/lib
+/dist/
