@@ -1,7 +1,7 @@
 
 
 <template>
-    <div class="container-fluid footer bg-light" style="margin-top: 90px;">
+    <div class="container-fluid footer bg-light py-5" style="margin-top: 90px;">
         <div class="container text-center">
             <div class="row">
                 <div class="col-12 mb-4">

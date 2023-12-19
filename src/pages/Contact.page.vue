@@ -71,13 +71,12 @@ const submitForm = () => {
         <div class="form-container">
             <div class="container py-3">
                 <div class="row justify-content-center">
-                    <div class="col-lg-6">
-                        <h1 class="section-title position-relative text-center mb-3 pink-icon">Contact</h1>
-                    </div>
                 </div>
                 <div class="row justify-content-center">
                     <div class="col-lg-9">
+
                         <div class="contact-form bg-light rounded p-5">
+                            <h1 class="section-title position-relative text-center pb-3 pink-icon">Contact</h1>
                             <transition name="fade">
                                 <div v-if="showSuccessMessage" class=" success-message text-center py-3">Votre message a
                                     bien été envoyé. <i class="bi bi-emoji-smile pink-icon"></i></div>
