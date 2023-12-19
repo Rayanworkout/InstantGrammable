@@ -39,7 +39,7 @@
     <div class="container-lg position-relative p-0 px-lg-3" style="z-index: 9;">
         <nav class="navbar navbar-expand-lg bg-white navbar-light shadow p-lg-0 gradient-border">
           <router-link :to="{ name: 'Home' }" class="navbar-brand d-block d-lg-none">
-            <h1 class="m-0 display-5 text-primary"><span class="text-secondary">L'instant</span>Grammable</h1>
+            <h1 class="m-0 text-primary little"><span class="text-secondary">L'instant</span>Grammable</h1>
           </router-link>
           <button type="button" class="navbar-toggler" data-toggle="collapse" data-target="#navbarCollapse">
             <span class="navbar-toggler-icon"></span>
@@ -77,6 +77,12 @@
 @media (max-width: 780px) {
   .gradient-border {
     border-width: 0px;
+  }
+}
+
+@media (max-width: 450px) {
+  .little {
+    font-size: 1.5rem;
   }
 }
 

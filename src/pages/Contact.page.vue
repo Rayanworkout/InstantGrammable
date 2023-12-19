@@ -50,6 +50,12 @@ const submitForm = () => {
         telegramMessage(formData)
         resetForm(formData);
 
+        // Scroll to top of the page so the user can see the success message
+        window.scrollTo({
+            top: 0,
+            behavior: 'smooth'
+        });
+
         // Show success message for 5 seconds
         showSuccessMessage.value = true;
         setTimeout(() => {
