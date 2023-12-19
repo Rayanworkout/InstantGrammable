@@ -67,7 +67,7 @@ const submitForm = () => {
 
 <template>
     <div id="contact-section" class="container-fluid py-3 mt-3">
-        <img src="../static/img/contact-bg.jpg" alt="brunch table picture" class="form-background">
+        <img src="../static/img/contact-bg-compressed.jpg" alt="brunch table picture" class="form-background">
         <div class="form-container">
             <div class="container py-3">
                 <div class="row justify-content-center">

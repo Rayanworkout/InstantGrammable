@@ -6,7 +6,7 @@
             <div class="row">
                 <div class="col-12 mb-4">
                     <a class="navbar-brand">
-                        <h1 class="m-0 mt-n2 display-4 text-primary"><span class="text-secondary">L'instant</span>Grammable
+                        <h1 class="m-0 mt-n2 display-5 text-primary"><span class="text-secondary">L'instant</span>Grammable
                         </h1>
                     </a>
                 </div>

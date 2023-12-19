@@ -3,7 +3,6 @@
 
 import { ref } from 'vue';
 import brunchTableImg from '../../static/img/brunch-table-compressed.jpg';
-import brunchTableImg2 from '../../static/img/brunch-table2-compressed.jpg';
 
 interface CarouselItem {
     image: string;
@@ -22,7 +21,7 @@ const carouselItems: CarouselItem[] = [
     },
     {
         title: "Un instant de douceur",
-        image: brunchTableImg2,
+        image: brunchTableImg,
         subtitle: "Venez découvrir nos pâtisseries et nos chocolats",
     }
 ];
