@@ -81,8 +81,11 @@ const submitForm = () => {
                 <div class="row justify-content-center">
                     <div class="col-lg-9">
 
-                        <div class="contact-form bg-light rounded p-5">
-                            <h1 class="section-title position-relative text-center pb-3 pink-icon">Contact</h1>
+                        <div class="contact-form bg-light rounded p-3">
+                            <h1 class="section-title position-relative text-center pink-icon">Contact</h1>
+                            <div class="text-center">
+                                <img src="../static/img/logo2.png" alt="carte" class="img-fluid" width="200px">
+                            </div>
                             <transition name="fade">
                                 <div v-if="showSuccessMessage" class=" success-message text-center py-3">Votre message a
                                     bien été envoyé. <i class="bi bi-emoji-smile success-message"></i></div>
@@ -127,3 +130,18 @@ const submitForm = () => {
         </div>
     </div>
 </template>
+
+<style scoped>
+
+h1 {
+    margin: 0;
+}
+
+
+@media (max-width: 768px) {
+    .img-fluid {
+        width: 120px;
+    }
+}
+
+</style>
